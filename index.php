@@ -203,17 +203,70 @@ foreach ($apiRoutes as $routeKey => $handler) {
 foreach ($pageRoutes as $routePattern => $handlerName) {
     $params = matchRoute($routePattern, $uri);
     if ($params !== false) {
-        // Page routes serve the SPA shell; front-end JS handles rendering.
-        // Pass extracted params as data attributes for the client.
-        $pageParams = $params;
+        $pageParams  = $params;
         $pageHandler = $handlerName;
+        $currentUser = getCurrentUser();
+        $csrfToken   = generateCsrfToken();
 
-        // Load the main HTML template
-        $templateFile = __DIR__ . '/templates/layout.php';
-        if (file_exists($templateFile)) {
-            require $templateFile;
+        // Map page handler names to view files
+        $viewMap = [
+            'page_home'             => 'landing.php',
+            'page_login'            => 'auth/login.php',
+            'page_signup'           => 'auth/signup.php',
+            'page_logout'           => null, // handled inline
+            'page_dashboard'        => 'dashboard.php',
+            'page_topics'           => 'topics.php',
+            'page_lessons'          => 'lessons/index.php',
+            'page_lessons_generate' => 'lessons/generate.php',
+            'page_quizzes'          => 'quizzes/index.php',
+            'page_quizzes_generate' => 'quizzes/generate.php',
+            'page_quizzes_take'     => 'quizzes/take.php',
+            'page_quizzes_review'   => 'quizzes/review.php',
+            'page_exams'            => 'exams/index.php',
+            'page_exams_builder'    => 'exams/builder.php',
+            'page_exams_take'       => 'exams/take.php',
+            'page_exams_review'     => 'exams/review.php',
+            'page_writing'          => 'writing/index.php',
+            'page_writing_edit'     => 'writing/editor.php',
+            'page_writing_report'   => 'writing/report.php',
+            'page_admin_topics'     => 'admin/topics.php',
+            'page_share'            => 'share.php',
+        ];
+
+        // Handle logout inline
+        if ($pageHandler === 'page_logout') {
+            logout();
+            header('Location: /');
+            exit;
+        }
+
+        // Require auth for non-guest pages
+        $guestPages = ['page_home', 'page_login', 'page_signup', 'page_share'];
+        if (!in_array($pageHandler, $guestPages, true)) {
+            requireAuth();
+        }
+
+        // Redirect authenticated users away from login/signup
+        if (in_array($pageHandler, ['page_login', 'page_signup'], true) && $currentUser) {
+            header('Location: /dashboard');
+            exit;
+        }
+
+        // Redirect root to dashboard if logged in
+        if ($pageHandler === 'page_home' && $currentUser) {
+            header('Location: /dashboard');
+            exit;
+        }
+
+        $viewFile = isset($viewMap[$pageHandler])
+            ? __DIR__ . '/views/' . $viewMap[$pageHandler]
+            : null;
+
+        if ($viewFile && file_exists($viewFile)) {
+            header('Content-Type: text/html; charset=utf-8');
+            require $viewFile;
         } else {
-            // Minimal fallback – SPA shell
+            // Minimal fallback
             header('Content-Type: text/html; charset=utf-8');
             echo '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">';
             echo '<meta name="viewport" content="width=device-width,initial-scale=1">';
@@ -225,7 +278,7 @@ foreach ($pageRoutes as $routePattern => $handlerName) {
             echo '></div>';
             echo '<script>window.__PAGE__=' . json_encode($pageHandler) . ';';
             echo 'window.__PARAMS__=' . json_encode($pageParams) . ';</script>';
-            echo '<script>window.__CSRF__=' . json_encode(generateCsrfToken()) . ';</script>';
+            echo '<script>window.__CSRF__=' . json_encode($csrfToken) . ';</script>';
             echo '</body></html>';
         }
         exit;
