@@ -1,0 +1,1421 @@
+{
+  "schema_version": "1.0",
+  "lastUpdated": "2025-06-20T00:00:00Z",
+  "topics": [
+    {
+      "id": "ap-calc-ab-limits",
+      "subject": "AP Calculus AB",
+      "name": "Limits and Continuity",
+      "tags": ["calculus", "limits", "continuity", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus AB"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSF-IF"
+    },
+    {
+      "id": "ap-calc-ab-derivatives",
+      "subject": "AP Calculus AB",
+      "name": "Derivatives",
+      "tags": ["calculus", "derivatives", "differentiation", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus AB"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSF-IF"
+    },
+    {
+      "id": "ap-calc-ab-integrals",
+      "subject": "AP Calculus AB",
+      "name": "Integrals",
+      "tags": ["calculus", "integrals", "integration", "antiderivatives", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus AB"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-calc-ab-applications-derivatives",
+      "subject": "AP Calculus AB",
+      "name": "Applications of Derivatives",
+      "tags": ["calculus", "derivatives", "optimization", "related rates", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus AB"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-calc-ab-applications-integrals",
+      "subject": "AP Calculus AB",
+      "name": "Applications of Integrals",
+      "tags": ["calculus", "integrals", "area", "volume", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus AB"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-calc-bc-series",
+      "subject": "AP Calculus BC",
+      "name": "Series",
+      "tags": ["calculus", "series", "sequences", "convergence", "Taylor", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus BC"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-calc-bc-parametric",
+      "subject": "AP Calculus BC",
+      "name": "Parametric Equations",
+      "tags": ["calculus", "parametric", "curves", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus BC"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-calc-bc-polar",
+      "subject": "AP Calculus BC",
+      "name": "Polar Coordinates",
+      "tags": ["calculus", "polar", "coordinates", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Calculus BC"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-physics-1-kinematics",
+      "subject": "AP Physics 1",
+      "name": "Kinematics",
+      "tags": ["physics", "kinematics", "motion", "velocity", "acceleration", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": "NGSS HS-PS2"
+    },
+    {
+      "id": "ap-physics-1-forces",
+      "subject": "AP Physics 1",
+      "name": "Forces and Newton's Laws",
+      "tags": ["physics", "forces", "Newton", "dynamics", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": "NGSS HS-PS2"
+    },
+    {
+      "id": "ap-physics-1-energy",
+      "subject": "AP Physics 1",
+      "name": "Energy and Work",
+      "tags": ["physics", "energy", "work", "conservation", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": "NGSS HS-PS3"
+    },
+    {
+      "id": "ap-physics-1-momentum",
+      "subject": "AP Physics 1",
+      "name": "Momentum",
+      "tags": ["physics", "momentum", "impulse", "collisions", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": "NGSS HS-PS2"
+    },
+    {
+      "id": "ap-physics-1-rotational",
+      "subject": "AP Physics 1",
+      "name": "Rotational Motion",
+      "tags": ["physics", "rotation", "torque", "angular momentum", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-physics-1-waves",
+      "subject": "AP Physics 1",
+      "name": "Waves and Sound",
+      "tags": ["physics", "waves", "sound", "frequency", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Physics 1"]
+      },
+      "standardsHints": "NGSS HS-PS4"
+    },
+    {
+      "id": "ap-chemistry-atomic-structure",
+      "subject": "AP Chemistry",
+      "name": "Atomic Structure",
+      "tags": ["chemistry", "atoms", "electron configuration", "periodic table", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": "NGSS HS-PS1"
+    },
+    {
+      "id": "ap-chemistry-bonding",
+      "subject": "AP Chemistry",
+      "name": "Chemical Bonding",
+      "tags": ["chemistry", "bonding", "ionic", "covalent", "molecular geometry", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": "NGSS HS-PS1"
+    },
+    {
+      "id": "ap-chemistry-stoichiometry",
+      "subject": "AP Chemistry",
+      "name": "Stoichiometry",
+      "tags": ["chemistry", "stoichiometry", "moles", "reactions", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": "NGSS HS-PS1"
+    },
+    {
+      "id": "ap-chemistry-thermodynamics",
+      "subject": "AP Chemistry",
+      "name": "Thermodynamics",
+      "tags": ["chemistry", "thermodynamics", "enthalpy", "entropy", "Gibbs", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": "NGSS HS-PS3"
+    },
+    {
+      "id": "ap-chemistry-kinetics",
+      "subject": "AP Chemistry",
+      "name": "Kinetics",
+      "tags": ["chemistry", "kinetics", "reaction rate", "catalysts", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-chemistry-equilibrium",
+      "subject": "AP Chemistry",
+      "name": "Equilibrium",
+      "tags": ["chemistry", "equilibrium", "Le Chatelier", "Keq", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Chemistry"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-biology-cell-structure",
+      "subject": "AP Biology",
+      "name": "Cell Structure and Function",
+      "tags": ["biology", "cells", "organelles", "membrane", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Biology"]
+      },
+      "standardsHints": "NGSS HS-LS1"
+    },
+    {
+      "id": "ap-biology-genetics",
+      "subject": "AP Biology",
+      "name": "Genetics",
+      "tags": ["biology", "genetics", "DNA", "inheritance", "Mendel", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Biology"]
+      },
+      "standardsHints": "NGSS HS-LS3"
+    },
+    {
+      "id": "ap-biology-evolution",
+      "subject": "AP Biology",
+      "name": "Evolution",
+      "tags": ["biology", "evolution", "natural selection", "speciation", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Biology"]
+      },
+      "standardsHints": "NGSS HS-LS4"
+    },
+    {
+      "id": "ap-biology-ecology",
+      "subject": "AP Biology",
+      "name": "Ecology",
+      "tags": ["biology", "ecology", "ecosystems", "populations", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Biology"]
+      },
+      "standardsHints": "NGSS HS-LS2"
+    },
+    {
+      "id": "ap-biology-molecular",
+      "subject": "AP Biology",
+      "name": "Molecular Biology",
+      "tags": ["biology", "molecular", "DNA replication", "transcription", "translation", "AP", "science"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Biology"]
+      },
+      "standardsHints": "NGSS HS-LS1"
+    },
+    {
+      "id": "ap-us-history-colonial",
+      "subject": "AP US History",
+      "name": "Colonial Period",
+      "tags": ["history", "US history", "colonial", "13 colonies", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP US History"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-us-history-revolution",
+      "subject": "AP US History",
+      "name": "American Revolution",
+      "tags": ["history", "US history", "revolution", "independence", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP US History"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-us-history-civil-war",
+      "subject": "AP US History",
+      "name": "Civil War",
+      "tags": ["history", "US history", "Civil War", "slavery", "reconstruction", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP US History"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-us-history-industrialization",
+      "subject": "AP US History",
+      "name": "Industrialization",
+      "tags": ["history", "US history", "industrialization", "Gilded Age", "labor", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP US History"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-us-history-cold-war",
+      "subject": "AP US History",
+      "name": "Cold War",
+      "tags": ["history", "US history", "Cold War", "Soviet Union", "containment", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP US History"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-english-lang-rhetorical",
+      "subject": "AP English Language",
+      "name": "Rhetorical Analysis",
+      "tags": ["English", "rhetoric", "analysis", "persuasion", "AP", "writing"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Language"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RI.11-12"
+    },
+    {
+      "id": "ap-english-lang-argumentation",
+      "subject": "AP English Language",
+      "name": "Argumentation",
+      "tags": ["English", "argumentation", "claims", "evidence", "AP", "writing"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Language"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.W.11-12.1"
+    },
+    {
+      "id": "ap-english-lang-synthesis",
+      "subject": "AP English Language",
+      "name": "Synthesis",
+      "tags": ["English", "synthesis", "sources", "research", "AP", "writing"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Language"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.W.11-12.7"
+    },
+    {
+      "id": "ap-english-lit-poetry",
+      "subject": "AP English Literature",
+      "name": "Poetry Analysis",
+      "tags": ["English", "poetry", "literary analysis", "AP", "literature"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Literature"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RL.11-12"
+    },
+    {
+      "id": "ap-english-lit-prose",
+      "subject": "AP English Literature",
+      "name": "Prose Fiction Analysis",
+      "tags": ["English", "prose", "fiction", "narrative", "AP", "literature"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Literature"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RL.11-12"
+    },
+    {
+      "id": "ap-english-lit-argument",
+      "subject": "AP English Literature",
+      "name": "Literary Argument",
+      "tags": ["English", "literary argument", "thesis", "interpretation", "AP", "literature"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP English Literature"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.W.11-12.1"
+    },
+    {
+      "id": "ap-csa-oop",
+      "subject": "AP Computer Science A",
+      "name": "Object-Oriented Programming",
+      "tags": ["computer science", "OOP", "Java", "classes", "objects", "AP", "programming"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Computer Science A"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-csa-data-structures",
+      "subject": "AP Computer Science A",
+      "name": "Data Structures",
+      "tags": ["computer science", "data structures", "arrays", "ArrayLists", "AP", "programming"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Computer Science A"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-csa-algorithms",
+      "subject": "AP Computer Science A",
+      "name": "Algorithms",
+      "tags": ["computer science", "algorithms", "sorting", "searching", "AP", "programming"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Computer Science A"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-csa-recursion",
+      "subject": "AP Computer Science A",
+      "name": "Recursion",
+      "tags": ["computer science", "recursion", "recursive methods", "AP", "programming"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Computer Science A"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-statistics-probability",
+      "subject": "AP Statistics",
+      "name": "Probability",
+      "tags": ["statistics", "probability", "random variables", "distributions", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Statistics"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSS-CP"
+    },
+    {
+      "id": "ap-statistics-inference",
+      "subject": "AP Statistics",
+      "name": "Statistical Inference",
+      "tags": ["statistics", "inference", "hypothesis testing", "confidence intervals", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Statistics"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSS-IC"
+    },
+    {
+      "id": "ap-statistics-regression",
+      "subject": "AP Statistics",
+      "name": "Regression",
+      "tags": ["statistics", "regression", "correlation", "linear models", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Statistics"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSS-ID"
+    },
+    {
+      "id": "ap-statistics-experimental-design",
+      "subject": "AP Statistics",
+      "name": "Experimental Design",
+      "tags": ["statistics", "experimental design", "sampling", "surveys", "AP", "math"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Statistics"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-psychology-biological",
+      "subject": "AP Psychology",
+      "name": "Biological Bases of Behavior",
+      "tags": ["psychology", "neuroscience", "brain", "nervous system", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Psychology"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-psychology-sensation",
+      "subject": "AP Psychology",
+      "name": "Sensation and Perception",
+      "tags": ["psychology", "sensation", "perception", "senses", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Psychology"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-psychology-learning-memory",
+      "subject": "AP Psychology",
+      "name": "Learning and Memory",
+      "tags": ["psychology", "learning", "memory", "conditioning", "cognition", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Psychology"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "ap-psychology-social",
+      "subject": "AP Psychology",
+      "name": "Social Psychology",
+      "tags": ["psychology", "social", "group behavior", "conformity", "AP"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "AP": ["AP Psychology"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "sat-heart-of-algebra",
+      "subject": "SAT Math",
+      "name": "Heart of Algebra",
+      "tags": ["SAT", "math", "algebra", "linear equations", "inequalities"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Heart of Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-REI"
+    },
+    {
+      "id": "sat-passport-advanced-math",
+      "subject": "SAT Math",
+      "name": "Passport to Advanced Math",
+      "tags": ["SAT", "math", "quadratics", "polynomials", "advanced algebra"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Passport to Advanced Math"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-SSE"
+    },
+    {
+      "id": "sat-problem-solving-data",
+      "subject": "SAT Math",
+      "name": "Problem Solving and Data Analysis",
+      "tags": ["SAT", "math", "data analysis", "ratios", "percentages", "statistics"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Problem Solving and Data Analysis"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSS-ID"
+    },
+    {
+      "id": "sat-additional-topics",
+      "subject": "SAT Math",
+      "name": "Additional Topics (Geometry/Trig)",
+      "tags": ["SAT", "math", "geometry", "trigonometry", "circles", "area", "volume"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Additional Topics in Math"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSG"
+    },
+    {
+      "id": "sat-linear-equations",
+      "subject": "SAT Math",
+      "name": "Linear Equations",
+      "tags": ["SAT", "math", "linear equations", "slope", "intercept"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Heart of Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-REI.B.3"
+    },
+    {
+      "id": "sat-systems-of-equations",
+      "subject": "SAT Math",
+      "name": "Systems of Equations",
+      "tags": ["SAT", "math", "systems", "linear systems", "substitution", "elimination"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Heart of Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-REI.C"
+    },
+    {
+      "id": "sat-quadratic-functions",
+      "subject": "SAT Math",
+      "name": "Quadratic Functions",
+      "tags": ["SAT", "math", "quadratics", "parabolas", "factoring", "vertex"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Passport to Advanced Math"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-SSE.B.3"
+    },
+    {
+      "id": "sat-data-interpretation",
+      "subject": "SAT Math",
+      "name": "Data Interpretation",
+      "tags": ["SAT", "math", "data", "graphs", "tables", "charts"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Problem Solving and Data Analysis"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSS-ID.B"
+    },
+    {
+      "id": "sat-ratios-proportions",
+      "subject": "SAT Math",
+      "name": "Ratios and Proportions",
+      "tags": ["SAT", "math", "ratios", "proportions", "percentages"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Problem Solving and Data Analysis"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSN-Q"
+    },
+    {
+      "id": "sat-information-ideas",
+      "subject": "SAT Reading & Writing",
+      "name": "Information and Ideas",
+      "tags": ["SAT", "reading", "main idea", "details", "inference"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Information and Ideas"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RI.9-10"
+    },
+    {
+      "id": "sat-craft-structure",
+      "subject": "SAT Reading & Writing",
+      "name": "Craft and Structure",
+      "tags": ["SAT", "reading", "vocabulary", "text structure", "purpose", "tone"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Craft and Structure"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RI.9-10.4"
+    },
+    {
+      "id": "sat-expression-ideas",
+      "subject": "SAT Reading & Writing",
+      "name": "Expression of Ideas",
+      "tags": ["SAT", "writing", "organization", "development", "effective language"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Expression of Ideas"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.W.9-10"
+    },
+    {
+      "id": "sat-standard-english",
+      "subject": "SAT Reading & Writing",
+      "name": "Standard English Conventions",
+      "tags": ["SAT", "writing", "grammar", "punctuation", "sentence structure"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Standard English Conventions"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.L.9-10"
+    },
+    {
+      "id": "sat-evidence-based-reading",
+      "subject": "SAT Reading & Writing",
+      "name": "Evidence-Based Reading",
+      "tags": ["SAT", "reading", "evidence", "textual support", "analysis"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Information and Ideas"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RI.9-10.1"
+    },
+    {
+      "id": "sat-vocabulary-context",
+      "subject": "SAT Reading & Writing",
+      "name": "Vocabulary in Context",
+      "tags": ["SAT", "reading", "vocabulary", "word meaning", "context clues"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Craft and Structure"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.L.9-10.4"
+    },
+    {
+      "id": "sat-grammar-usage",
+      "subject": "SAT Reading & Writing",
+      "name": "Grammar and Usage",
+      "tags": ["SAT", "writing", "grammar", "subject-verb agreement", "pronoun usage"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Standard English Conventions"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.L.9-10.1"
+    },
+    {
+      "id": "act-english-production",
+      "subject": "ACT English",
+      "name": "Production of Writing",
+      "tags": ["ACT", "English", "writing", "organization", "topic development"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "ACT": ["Production of Writing"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-english-knowledge-language",
+      "subject": "ACT English",
+      "name": "Knowledge of Language",
+      "tags": ["ACT", "English", "style", "tone", "word choice"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "ACT": ["Knowledge of Language"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-english-conventions",
+      "subject": "ACT English",
+      "name": "Conventions of Standard English",
+      "tags": ["ACT", "English", "grammar", "punctuation", "sentence structure"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Conventions of Standard English"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-math-pre-algebra",
+      "subject": "ACT Math",
+      "name": "Pre-Algebra",
+      "tags": ["ACT", "math", "pre-algebra", "fractions", "decimals", "integers"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "ACT": ["Pre-Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.8.NS"
+    },
+    {
+      "id": "act-math-elementary-algebra",
+      "subject": "ACT Math",
+      "name": "Elementary Algebra",
+      "tags": ["ACT", "math", "algebra", "expressions", "equations", "inequalities"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Elementary Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-REI"
+    },
+    {
+      "id": "act-math-intermediate-algebra",
+      "subject": "ACT Math",
+      "name": "Intermediate Algebra",
+      "tags": ["ACT", "math", "algebra", "quadratics", "systems", "functions"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "ACT": ["Intermediate Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-SSE"
+    },
+    {
+      "id": "act-math-coordinate-geometry",
+      "subject": "ACT Math",
+      "name": "Coordinate Geometry",
+      "tags": ["ACT", "math", "coordinate geometry", "graphing", "slope", "lines"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Coordinate Geometry"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSG-GPE"
+    },
+    {
+      "id": "act-math-plane-geometry",
+      "subject": "ACT Math",
+      "name": "Plane Geometry",
+      "tags": ["ACT", "math", "geometry", "angles", "triangles", "circles", "area"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Plane Geometry"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSG-CO"
+    },
+    {
+      "id": "act-math-trigonometry",
+      "subject": "ACT Math",
+      "name": "Trigonometry",
+      "tags": ["ACT", "math", "trigonometry", "sin", "cos", "tan", "identities"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "ACT": ["Trigonometry"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSF-TF"
+    },
+    {
+      "id": "act-reading-key-ideas",
+      "subject": "ACT Reading",
+      "name": "Key Ideas and Details",
+      "tags": ["ACT", "reading", "main idea", "supporting details", "inference"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Key Ideas and Details"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-reading-craft-structure",
+      "subject": "ACT Reading",
+      "name": "Craft and Structure",
+      "tags": ["ACT", "reading", "vocabulary", "text structure", "point of view"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "ACT": ["Craft and Structure"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-reading-integration",
+      "subject": "ACT Reading",
+      "name": "Integration of Knowledge",
+      "tags": ["ACT", "reading", "synthesis", "comparison", "evaluation"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "ACT": ["Integration of Knowledge"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-science-data-representation",
+      "subject": "ACT Science",
+      "name": "Data Representation",
+      "tags": ["ACT", "science", "data", "graphs", "tables", "interpretation"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "ACT": ["Data Representation"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-science-research-summaries",
+      "subject": "ACT Science",
+      "name": "Research Summaries",
+      "tags": ["ACT", "science", "experiments", "variables", "conclusions"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "ACT": ["Research Summaries"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "act-science-conflicting-viewpoints",
+      "subject": "ACT Science",
+      "name": "Conflicting Viewpoints",
+      "tags": ["ACT", "science", "viewpoints", "comparison", "argumentation"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "ACT": ["Conflicting Viewpoints"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "preact-english-conventions",
+      "subject": "PreACT English",
+      "name": "Conventions of Standard English",
+      "tags": ["PreACT", "English", "grammar", "punctuation", "conventions"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Conventions of Standard English"],
+        "ACT": ["Conventions of Standard English"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "preact-english-production",
+      "subject": "PreACT English",
+      "name": "Production of Writing",
+      "tags": ["PreACT", "English", "writing", "organization"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Production of Writing"],
+        "ACT": ["Production of Writing"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "preact-math-pre-algebra",
+      "subject": "PreACT Math",
+      "name": "Pre-Algebra Foundations",
+      "tags": ["PreACT", "math", "pre-algebra", "arithmetic", "fractions"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Pre-Algebra"],
+        "ACT": ["Pre-Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.7.NS"
+    },
+    {
+      "id": "preact-math-elementary-algebra",
+      "subject": "PreACT Math",
+      "name": "Elementary Algebra Foundations",
+      "tags": ["PreACT", "math", "algebra", "expressions", "basic equations"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Elementary Algebra"],
+        "ACT": ["Elementary Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.8.EE"
+    },
+    {
+      "id": "preact-math-geometry",
+      "subject": "PreACT Math",
+      "name": "Geometry Foundations",
+      "tags": ["PreACT", "math", "geometry", "shapes", "angles", "area"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Plane Geometry"],
+        "ACT": ["Plane Geometry"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.8.G"
+    },
+    {
+      "id": "preact-reading-key-ideas",
+      "subject": "PreACT Reading",
+      "name": "Key Ideas and Details",
+      "tags": ["PreACT", "reading", "main idea", "details", "comprehension"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Key Ideas and Details"],
+        "ACT": ["Key Ideas and Details"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "preact-reading-craft-structure",
+      "subject": "PreACT Reading",
+      "name": "Craft and Structure",
+      "tags": ["PreACT", "reading", "vocabulary", "structure", "purpose"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Craft and Structure"],
+        "ACT": ["Craft and Structure"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "preact-science-data",
+      "subject": "PreACT Science",
+      "name": "Data Interpretation",
+      "tags": ["PreACT", "science", "data", "graphs", "basic interpretation"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "PreACT": ["Data Representation"],
+        "ACT": ["Data Representation"]
+      },
+      "standardsHints": ""
+    },
+    {
+      "id": "mca-math-number-operations",
+      "subject": "MCA Math",
+      "name": "Number and Operations",
+      "tags": ["MCA", "math", "numbers", "operations", "place value", "computation"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Number & Operation"]
+      },
+      "standardsHints": "MN Math Standard 1"
+    },
+    {
+      "id": "mca-math-algebra",
+      "subject": "MCA Math",
+      "name": "Algebra",
+      "tags": ["MCA", "math", "algebra", "patterns", "equations", "functions"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Algebra"]
+      },
+      "standardsHints": "MN Math Standard 2"
+    },
+    {
+      "id": "mca-math-geometry-measurement",
+      "subject": "MCA Math",
+      "name": "Geometry and Measurement",
+      "tags": ["MCA", "math", "geometry", "measurement", "area", "volume", "shapes"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Geometry & Measurement"]
+      },
+      "standardsHints": "MN Math Standard 3"
+    },
+    {
+      "id": "mca-math-data-probability",
+      "subject": "MCA Math",
+      "name": "Data Analysis and Probability",
+      "tags": ["MCA", "math", "data", "probability", "statistics", "graphs"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Data Analysis & Probability"]
+      },
+      "standardsHints": "MN Math Standard 4"
+    },
+    {
+      "id": "mca-reading-key-ideas",
+      "subject": "MCA Reading",
+      "name": "Key Ideas and Details",
+      "tags": ["MCA", "reading", "main idea", "supporting details", "inference"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Key Ideas and Details"]
+      },
+      "standardsHints": "MN ELA Standard - Reading"
+    },
+    {
+      "id": "mca-reading-craft-structure",
+      "subject": "MCA Reading",
+      "name": "Craft and Structure",
+      "tags": ["MCA", "reading", "vocabulary", "text structure", "author purpose"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Craft and Structure"]
+      },
+      "standardsHints": "MN ELA Standard - Reading"
+    },
+    {
+      "id": "mca-reading-integration",
+      "subject": "MCA Reading",
+      "name": "Integration of Knowledge and Ideas",
+      "tags": ["MCA", "reading", "synthesis", "evaluation", "comparison"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "MCA": ["Integration of Knowledge and Ideas"]
+      },
+      "standardsHints": "MN ELA Standard - Reading"
+    },
+    {
+      "id": "mca-reading-literature",
+      "subject": "MCA Reading",
+      "name": "Literature",
+      "tags": ["MCA", "reading", "literature", "fiction", "poetry", "drama"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Literature"]
+      },
+      "standardsHints": "MN ELA Standard - Reading Literature"
+    },
+    {
+      "id": "mca-reading-informational",
+      "subject": "MCA Reading",
+      "name": "Informational Text",
+      "tags": ["MCA", "reading", "informational", "nonfiction", "text features"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Informational Text"]
+      },
+      "standardsHints": "MN ELA Standard - Reading Informational"
+    },
+    {
+      "id": "mca-science-nature",
+      "subject": "MCA Science",
+      "name": "Nature of Science and Engineering",
+      "tags": ["MCA", "science", "scientific method", "engineering", "inquiry"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Nature of Science and Engineering"]
+      },
+      "standardsHints": "MN Science Standard 1"
+    },
+    {
+      "id": "mca-science-physical",
+      "subject": "MCA Science",
+      "name": "Physical Science",
+      "tags": ["MCA", "science", "physical science", "matter", "energy", "forces"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Physical Science"]
+      },
+      "standardsHints": "MN Science Standard 2"
+    },
+    {
+      "id": "mca-science-earth",
+      "subject": "MCA Science",
+      "name": "Earth and Space Science",
+      "tags": ["MCA", "science", "earth science", "weather", "geology", "space"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Earth and Space Science"]
+      },
+      "standardsHints": "MN Science Standard 3"
+    },
+    {
+      "id": "mca-science-life",
+      "subject": "MCA Science",
+      "name": "Life Science",
+      "tags": ["MCA", "science", "life science", "organisms", "ecosystems", "cells"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Life Science"]
+      },
+      "standardsHints": "MN Science Standard 4"
+    },
+    {
+      "id": "mca-math-ratios-proportions",
+      "subject": "MCA Math",
+      "name": "Ratios and Proportional Relationships",
+      "tags": ["MCA", "math", "ratios", "proportions", "rates"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Number & Operation"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.6.RP"
+    },
+    {
+      "id": "history-world-war-1",
+      "subject": "History",
+      "name": "World War I",
+      "tags": ["history", "world history", "WWI", "war", "alliances", "trenches"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "history-world-war-2",
+      "subject": "History",
+      "name": "World War II",
+      "tags": ["history", "world history", "WWII", "war", "Holocaust", "Allies"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "history-ancient-rome",
+      "subject": "History",
+      "name": "Ancient Rome",
+      "tags": ["history", "ancient history", "Rome", "Roman Empire", "republic"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "history-ancient-greece",
+      "subject": "History",
+      "name": "Ancient Greece",
+      "tags": ["history", "ancient history", "Greece", "democracy", "philosophy"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "history-renaissance",
+      "subject": "History",
+      "name": "Renaissance",
+      "tags": ["history", "world history", "Renaissance", "art", "humanism", "Europe"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "history-industrial-revolution",
+      "subject": "History",
+      "name": "Industrial Revolution",
+      "tags": ["history", "world history", "industrialization", "factories", "technology"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "programming-python-basics",
+      "subject": "Programming",
+      "name": "Python Basics",
+      "tags": ["programming", "Python", "coding", "beginner", "variables", "loops"],
+      "difficultyHints": ["Beginner"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "programming-javascript-fundamentals",
+      "subject": "Programming",
+      "name": "JavaScript Fundamentals",
+      "tags": ["programming", "JavaScript", "web development", "DOM", "functions"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "programming-html-css",
+      "subject": "Programming",
+      "name": "HTML/CSS",
+      "tags": ["programming", "HTML", "CSS", "web development", "front-end"],
+      "difficultyHints": ["Beginner"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "programming-data-structures",
+      "subject": "Programming",
+      "name": "Data Structures",
+      "tags": ["programming", "data structures", "arrays", "linked lists", "trees", "hash tables"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "programming-algorithms",
+      "subject": "Programming",
+      "name": "Algorithms",
+      "tags": ["programming", "algorithms", "sorting", "searching", "Big O", "complexity"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "math-arithmetic",
+      "subject": "Mathematics",
+      "name": "Arithmetic",
+      "tags": ["math", "arithmetic", "addition", "subtraction", "multiplication", "division"],
+      "difficultyHints": ["Beginner"],
+      "testMappings": {
+        "MCA": ["Number & Operation"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.4.NBT"
+    },
+    {
+      "id": "math-pre-algebra",
+      "subject": "Mathematics",
+      "name": "Pre-Algebra",
+      "tags": ["math", "pre-algebra", "integers", "fractions", "decimals", "ratios"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "ACT": ["Pre-Algebra"],
+        "PreACT": ["Pre-Algebra"],
+        "MCA": ["Number & Operation"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.7.NS"
+    },
+    {
+      "id": "math-algebra-1",
+      "subject": "Mathematics",
+      "name": "Algebra 1",
+      "tags": ["math", "algebra", "equations", "inequalities", "linear functions"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Heart of Algebra"],
+        "ACT": ["Elementary Algebra"],
+        "MCA": ["Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-REI"
+    },
+    {
+      "id": "math-geometry",
+      "subject": "Mathematics",
+      "name": "Geometry",
+      "tags": ["math", "geometry", "proofs", "triangles", "circles", "congruence"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Additional Topics in Math"],
+        "ACT": ["Plane Geometry"],
+        "MCA": ["Geometry & Measurement"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSG-CO"
+    },
+    {
+      "id": "math-algebra-2",
+      "subject": "Mathematics",
+      "name": "Algebra 2",
+      "tags": ["math", "algebra", "quadratics", "polynomials", "exponentials", "logarithms"],
+      "difficultyHints": ["Intermediate", "Advanced"],
+      "testMappings": {
+        "SAT": ["Passport to Advanced Math"],
+        "ACT": ["Intermediate Algebra"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSA-SSE"
+    },
+    {
+      "id": "math-pre-calculus",
+      "subject": "Mathematics",
+      "name": "Pre-Calculus",
+      "tags": ["math", "pre-calculus", "trigonometry", "functions", "limits introduction"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {
+        "ACT": ["Trigonometry"]
+      },
+      "standardsHints": "CCSS.MATH.CONTENT.HSF-TF"
+    },
+    {
+      "id": "math-linear-algebra",
+      "subject": "Mathematics",
+      "name": "Linear Algebra",
+      "tags": ["math", "linear algebra", "matrices", "vectors", "transformations"],
+      "difficultyHints": ["Advanced"],
+      "testMappings": {},
+      "standardsHints": ""
+    },
+    {
+      "id": "science-general-biology",
+      "subject": "Science",
+      "name": "General Biology",
+      "tags": ["science", "biology", "life science", "cells", "organisms", "genetics"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Life Science"]
+      },
+      "standardsHints": "NGSS MS-LS1"
+    },
+    {
+      "id": "science-general-chemistry",
+      "subject": "Science",
+      "name": "General Chemistry",
+      "tags": ["science", "chemistry", "elements", "reactions", "periodic table"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Physical Science"]
+      },
+      "standardsHints": "NGSS MS-PS1"
+    },
+    {
+      "id": "science-general-physics",
+      "subject": "Science",
+      "name": "General Physics",
+      "tags": ["science", "physics", "motion", "forces", "energy"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Physical Science"]
+      },
+      "standardsHints": "NGSS MS-PS2"
+    },
+    {
+      "id": "science-earth-science",
+      "subject": "Science",
+      "name": "Earth Science",
+      "tags": ["science", "earth science", "geology", "weather", "climate", "plate tectonics"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "MCA": ["Earth and Space Science"]
+      },
+      "standardsHints": "NGSS MS-ESS1"
+    },
+    {
+      "id": "science-environmental",
+      "subject": "Science",
+      "name": "Environmental Science",
+      "tags": ["science", "environmental", "ecology", "pollution", "conservation", "climate change"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "MCA": ["Life Science"]
+      },
+      "standardsHints": "NGSS HS-ESS3"
+    },
+    {
+      "id": "english-grammar-fundamentals",
+      "subject": "English",
+      "name": "Grammar Fundamentals",
+      "tags": ["English", "grammar", "parts of speech", "sentence structure", "punctuation"],
+      "difficultyHints": ["Beginner"],
+      "testMappings": {
+        "SAT": ["Standard English Conventions"],
+        "ACT": ["Conventions of Standard English"],
+        "MCA": ["Craft and Structure"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.L.6.1"
+    },
+    {
+      "id": "english-essay-writing",
+      "subject": "English",
+      "name": "Essay Writing",
+      "tags": ["English", "writing", "essays", "thesis", "paragraphs", "argumentation"],
+      "difficultyHints": ["Intermediate"],
+      "testMappings": {
+        "SAT": ["Expression of Ideas"],
+        "ACT": ["Production of Writing"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.W.9-10.1"
+    },
+    {
+      "id": "english-creative-writing",
+      "subject": "English",
+      "name": "Creative Writing",
+      "tags": ["English", "writing", "creative", "narrative", "fiction", "storytelling"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {},
+      "standardsHints": "CCSS.ELA-LITERACY.W.9-10.3"
+    },
+    {
+      "id": "english-reading-comprehension",
+      "subject": "English",
+      "name": "Reading Comprehension",
+      "tags": ["English", "reading", "comprehension", "inference", "main idea"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "SAT": ["Information and Ideas"],
+        "ACT": ["Key Ideas and Details"],
+        "MCA": ["Key Ideas and Details"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.RI.6.1"
+    },
+    {
+      "id": "english-vocabulary-building",
+      "subject": "English",
+      "name": "Vocabulary Building",
+      "tags": ["English", "vocabulary", "word roots", "prefixes", "suffixes", "context clues"],
+      "difficultyHints": ["Beginner", "Intermediate"],
+      "testMappings": {
+        "SAT": ["Craft and Structure"],
+        "ACT": ["Knowledge of Language"],
+        "MCA": ["Craft and Structure"]
+      },
+      "standardsHints": "CCSS.ELA-LITERACY.L.9-10.4"
+    }
+  ]
+}

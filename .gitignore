@@ -1,0 +1,10 @@
+/data/users/
+/data/lessons/
+/data/quizzes/
+/data/exams/
+/data/writing/
+/data/integrity/
+/data/shares/
+/data/ai_logs/
+*.log
+.env
