@@ -310,7 +310,19 @@ document.addEventListener('keydown', (e) => {
 </script>
 
 <?= $pageScripts ?>
-<script type="module" src="/js/app.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/markdown.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/topics.js"></script>
+<script src="/js/lessons.js"></script>
+<script src="/js/quizzes.js"></script>
+<script src="/js/exams.js"></script>
+<script src="/js/test-runner.js"></script>
+<script src="/js/writing.js"></script>
+<script src="/js/analytics.js"></script>
+<script src="/js/integrity.js"></script>
+<script src="/js/command-palette.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
 <?php
