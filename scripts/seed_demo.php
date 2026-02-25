@@ -62,7 +62,7 @@ echo "  Credentials: username=\"demo\" password=\"demo1234\"\n\n";
 
 echo "[2/5] Creating sample lesson (Algebra Basics)...\n";
 
-$lessonsDir = DATA_DIR . '/lessons';
+$lessonsDir = DATA_DIR . '/lessons/' . $userId;
 ensureDir($lessonsDir);
 
 $lessonId = generateId();
@@ -70,11 +70,12 @@ $lesson = [
     'id'         => $lessonId,
     'userId'     => $userId,
     'topic'      => 'Algebra Basics',
-    'difficulty' => 3,
-    'length'     => 'standard',
+    'subtopic'   => 'Solving Linear Equations',
+    'level'      => 'Intermediate',
     'createdAt'  => gmdate('c'),
-    'content'    => [
+    'data'       => [
         'title'    => 'Algebra Basics — Solving Linear Equations',
+        'schema_version' => '1.0',
         'overview' => 'This lesson introduces the fundamental concepts of algebra, focusing on variables, expressions, and solving linear equations.',
         'sections' => [
             [
@@ -116,7 +117,7 @@ if (writeJson($lessonsDir . '/' . $lessonId . '.json', $lesson)) {
 
 echo "[3/5] Creating sample quiz (Algebra Basics — 5 questions)...\n";
 
-$quizzesDir = DATA_DIR . '/quizzes';
+$quizzesDir = DATA_DIR . '/quizzes/' . $userId;
 ensureDir($quizzesDir);
 
 $quizId = generateId();
@@ -124,56 +125,69 @@ $quiz = [
     'id'            => $quizId,
     'userId'        => $userId,
     'topic'         => 'Algebra Basics',
-    'questionCount' => 5,
+    'subtopic'      => 'Linear Equations',
+    'difficulty'    => 'Intermediate',
     'createdAt'     => gmdate('c'),
-    'graded'        => true,
-    'score'         => 4,
-    'total'         => 5,
-    'questions'     => [
-        [
-            'id'           => 'q1',
-            'type'         => 'multiple_choice',
-            'text'         => 'Solve for $x$: $2x + 5 = 13$',
-            'choices'      => ['$x = 3$', '$x = 4$', '$x = 5$', '$x = 9$'],
-            'correctIndex' => 1,
-            'userAnswer'   => 1,
-            'correct'      => true,
-        ],
-        [
-            'id'           => 'q2',
-            'type'         => 'multiple_choice',
-            'text'         => 'Which property allows you to add the same value to both sides of an equation?',
-            'choices'      => ['Distributive Property', 'Addition Property of Equality', 'Commutative Property', 'Associative Property'],
-            'correctIndex' => 1,
-            'userAnswer'   => 1,
-            'correct'      => true,
-        ],
-        [
-            'id'           => 'q3',
-            'type'         => 'multiple_choice',
-            'text'         => 'Simplify: $3(x + 4) - 2x$',
-            'choices'      => ['$x + 12$', '$x + 4$', '$5x + 12$', '$5x + 4$'],
-            'correctIndex' => 0,
-            'userAnswer'   => 0,
-            'correct'      => true,
-        ],
-        [
-            'id'           => 'q4',
-            'type'         => 'multiple_choice',
-            'text'         => 'Solve for $x$: $\frac{x}{4} = 7$',
-            'choices'      => ['$x = 11$', '$x = 1.75$', '$x = 28$', '$x = 3$'],
-            'correctIndex' => 2,
-            'userAnswer'   => 2,
-            'correct'      => true,
-        ],
-        [
-            'id'           => 'q5',
-            'type'         => 'multiple_choice',
-            'text'         => 'What is the value of $x$ in $5x - 3 = 2x + 9$?',
-            'choices'      => ['$x = 2$', '$x = 4$', '$x = 6$', '$x = 12$'],
-            'correctIndex' => 1,
-            'userAnswer'   => 0,
-            'correct'      => false,
+    'results'       => [
+        'score'   => 80.0,
+        'correct' => 4,
+        'total'   => 5,
+        'gradedAt'=> gmdate('c'),
+        'details' => [],
+    ],
+    'data'          => [
+        'schema_version' => '1.0',
+        'questions' => [
+            [
+                'id'      => 'q1',
+                'type'    => 'multiple_choice_4',
+                'prompt_md'=> 'Solve for $x$: $2x + 5 = 13$',
+                'options' => ['$x = 3$', '$x = 4$', '$x = 5$', '$x = 9$'],
+                'correct' => '$x = 4$',
+                'difficulty' => 'Beginner',
+                'topicIds' => ['algebra-basics'],
+                'domainTags' => ['Algebra'],
+            ],
+            [
+                'id'      => 'q2',
+                'type'    => 'multiple_choice_4',
+                'prompt_md'=> 'Which property allows you to add the same value to both sides of an equation?',
+                'options' => ['Distributive Property', 'Addition Property of Equality', 'Commutative Property', 'Associative Property'],
+                'correct' => 'Addition Property of Equality',
+                'difficulty' => 'Beginner',
+                'topicIds' => ['algebra-basics'],
+                'domainTags' => ['Algebra'],
+            ],
+            [
+                'id'      => 'q3',
+                'type'    => 'multiple_choice_4',
+                'prompt_md'=> 'Simplify: $3(x + 4) - 2x$',
+                'options' => ['$x + 12$', '$x + 4$', '$5x + 12$', '$5x + 4$'],
+                'correct' => '$x + 12$',
+                'difficulty' => 'Intermediate',
+                'topicIds' => ['algebra-basics'],
+                'domainTags' => ['Algebra'],
+            ],
+            [
+                'id'      => 'q4',
+                'type'    => 'multiple_choice_4',
+                'prompt_md'=> 'Solve for $x$: $\\frac{x}{4} = 7$',
+                'options' => ['$x = 11$', '$x = 1.75$', '$x = 28$', '$x = 3$'],
+                'correct' => '$x = 28$',
+                'difficulty' => 'Intermediate',
+                'topicIds' => ['algebra-basics'],
+                'domainTags' => ['Algebra'],
+            ],
+            [
+                'id'      => 'q5',
+                'type'    => 'multiple_choice_4',
+                'prompt_md'=> 'What is the value of $x$ in $5x - 3 = 2x + 9$?',
+                'options' => ['$x = 2$', '$x = 4$', '$x = 6$', '$x = 12$'],
+                'correct' => '$x = 4$',
+                'difficulty' => 'Moderate',
+                'topicIds' => ['algebra-basics'],
+                'domainTags' => ['Algebra'],
+            ],
         ],
     ],
 ];
@@ -188,7 +202,7 @@ if (writeJson($quizzesDir . '/' . $quizId . '.json', $quiz)) {
 
 echo "[4/5] Creating sample writing document...\n";
 
-$writingDir = DATA_DIR . '/writing';
+$writingDir = DATA_DIR . '/writing/' . $userId;
 ensureDir($writingDir);
 
 $docId = generateId();
@@ -198,6 +212,7 @@ $document = [
     'title'     => 'The Impact of Technology on Education',
     'createdAt' => gmdate('c'),
     'updatedAt' => gmdate('c'),
+    'metadata'  => ['wordCount' => 192, 'docType' => 'essay'],
     'content'   => "# The Impact of Technology on Education\n\n" .
                    "## Introduction\n\n" .
                    "Technology has fundamentally transformed the landscape of modern education. From interactive " .
@@ -241,14 +256,14 @@ if (writeJson($writingDir . '/' . $docId . '.json', $document)) {
 
 echo "[5/5] Creating sample exam attempt metadata...\n";
 
-$examsDir = DATA_DIR . '/exams';
+$examsDir = DATA_DIR . '/exams/' . $userId;
 ensureDir($examsDir);
 
 $examId = generateId();
 $exam = [
     'id'          => $examId,
     'userId'      => $userId,
-    'type'        => 'ACT',
+    'examType'    => 'ACT',
     'createdAt'   => gmdate('c'),
     'completedAt' => gmdate('c'),
     'status'      => 'completed',
