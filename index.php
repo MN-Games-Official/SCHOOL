@@ -9,6 +9,36 @@
  * @package School
  */
 
+// ── Serve static files when using PHP built-in server ────────────────────────
+if (php_sapi_name() === 'cli-server') {
+    $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $filePath   = __DIR__ . $requestUri;
+    // Serve existing static files directly (js, css, images, fonts, etc.)
+    if ($requestUri !== '/' && is_file($filePath)) {
+        $ext = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
+        $mimeTypes = [
+            'js'   => 'application/javascript',
+            'css'  => 'text/css',
+            'json' => 'application/json',
+            'png'  => 'image/png',
+            'jpg'  => 'image/jpeg',
+            'jpeg' => 'image/jpeg',
+            'gif'  => 'image/gif',
+            'svg'  => 'image/svg+xml',
+            'ico'  => 'image/x-icon',
+            'woff' => 'font/woff',
+            'woff2'=> 'font/woff2',
+            'ttf'  => 'font/ttf',
+        ];
+        if (isset($mimeTypes[$ext])) {
+            header('Content-Type: ' . $mimeTypes[$ext]);
+            readfile($filePath);
+            return;
+        }
+        return false; // Let PHP built-in server handle other static files
+    }
+}
+
 // ── Bootstrap ────────────────────────────────────────────────────────────────
 
 require_once __DIR__ . '/includes/config.php';
